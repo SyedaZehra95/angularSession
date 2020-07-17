@@ -1,0 +1,14 @@
+
+<h2>Login</h2>
+
+<form [formGroup]="loginForm" (ngSubmit)="login(loginForm)" >
+  <label for="email">Email</label><br>
+  <input type="text" id="email" name="email" formControlName="email" ><br>
+  <label for="password">Password</label><br>
+  <input type="text" id="password" name="password" formControlName="password"><br><br>
+  <div *ngIf="loginForm.get('password').hasError('required')"> Please enter a password</div> 
+  <input type="submit" value="Submit" [disabled]="loginForm.invalid" >
+  
+</form> 
+
+<a routerLink="/register">Not registered? Click here to signup</a>

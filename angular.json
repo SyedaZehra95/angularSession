@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "project2020"
+    }
+  },
+  "defaultProject": "project2020",
+  "cli": {
+    "analytics": false
+  }
 }
